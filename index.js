@@ -26,9 +26,8 @@ app.get("/ask", (req, res) => {
 });
 
 app.post("/saveask", (req, res) => {
-    var titulo = req.body.titulo;
-    var descricao = req.body.descricao;
-    res.send("Formulario Recebido! Seu titulo eh " + titulo + " " + " E sua descricao eh " + descricao + " ");
+
+    res.json({success : true});
 });
 
 
