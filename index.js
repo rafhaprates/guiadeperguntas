@@ -4,7 +4,13 @@ const app = express();
 //Estou comunicando para o Express para usar o EJS como motor para desenhar o HTML
 app.set('view engine', 'ejs');
 app.get("/", (req, res) => {
-    res.send("Bem vindo ao meu site!");    
+    let nome = "Rafhael Prates";
+    let lang = "Teste"
+    res.render("index", {
+        nome: nome,
+        lang: lang,
+        empresa: "momesso"
+    })  
 });
 
 
