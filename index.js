@@ -3,6 +3,8 @@ const app = express();
 
 //Estou comunicando para o Express para usar o EJS como motor para desenhar o HTML
 app.set('view engine', 'ejs');
+app.use(express.static('public'));
+
 app.get("/", (req, res) => {
     let nome = "Rafhael Prates";
     let lang = "Teste"
