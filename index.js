@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
 });
 
 
+app.get("/ask", (req, res) => {
+    res.render("ask");
+});
+
 
 app.listen(3000, (error)=>{
     if (error) {
