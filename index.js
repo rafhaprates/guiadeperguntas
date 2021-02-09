@@ -6,13 +6,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get("/", (req, res) => {
-    let nome = "Rafhael Prates";
-    let lang = "Teste"
-    res.render("index", {
-        nome: nome,
-        lang: lang,
-        empresa: "momesso"
-    })  
+    res.render("index");  
 });
 
 
